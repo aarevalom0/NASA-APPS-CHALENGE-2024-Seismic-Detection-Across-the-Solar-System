@@ -2,6 +2,16 @@
 
 Dive into our cutting-edge model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of seismic activity. 🚀
 
+## What to Expect from the Model 🌍
+
+When you feed a CSV file into the model, it will provide the number of detected seismic events along with significant data. Additionally, it generates visualizations to help you understand the seismic activity better.
+
+### Visualization Example
+
+![Prediction Plot](Plots/prediction.png)
+
+In this graph, you can see the exact points of seismic events and their corresponding frequency. The beauty of this predictive model lies in its adaptability; it can continuously evolve as new data is introduced, ensuring that the detection process remains accurate and up-to-date.
+
 ## Key Features
 
 - **High Accuracy**: The model consistently achieves high training and cross-validation scores (around 0.999-1.000), indicating excellent performance.
