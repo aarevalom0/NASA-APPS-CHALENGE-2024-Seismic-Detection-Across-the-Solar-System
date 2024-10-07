@@ -144,37 +144,38 @@
             background-color: #f39c12;
         }
 
-        /* Animations */
-        h2, h1 {
-            animation: fadeInDown 2s ease-in-out;
+        /* Modal for logo */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Fallback color */
         }
 
-        p, .highlight, .action-button {
-            animation: fadeInUp 1.5s ease-in-out;
+        .modal-content {
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%; /* Could be more or less, depending on screen size */
+            text-align: center;
         }
 
-        @keyframes fadeInDown {
-            0% {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .modal-content img {
+            max-width: 100%; /* Responsive image */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for logo */
+            animation: spin 3s ease-in-out; /* Add spinning animation */
         }
 
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
-
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Spacey Font -->
 </head>
@@ -191,9 +192,15 @@
             <a href="#model-expectations"><i class="fas fa-cogs"></i> Model Expectations</a>
             <a href="#advantages"><i class="fas fa-star"></i> Key Advantages</a>
             <a href="#usage-guide"><i class="fas fa-book"></i> Usage Guide</a>
-            
         </nav>
     </header>
+
+    <!-- Modal for displaying the logo -->
+    <div id="logoModal" class="modal">
+        <div class="modal-content">
+            <img src="CodexTeam.png" alt="Codex Team Logo">
+        </div>
+    </div>
 
     <div class="container">
         <section id="introduction">
@@ -214,7 +221,6 @@
             <div class="video-container">
                 <iframe width="800" height="550" src="https://www.youtube.com/embed/nNVApNWExxE" frameborder="0" allowfullscreen></iframe>
             </div>
-            
         </section>
 
         <section id="documentation">
@@ -222,7 +228,6 @@
             <p>Explore our comprehensive program documentation embedded above!</p>
             <div class="documentation">
                 <iframe src="https://heyzine.com/flip-book/a7dfe014eb.html" title="Codex Team Documentation"></iframe>
-                
             </div>
         </section>
 
@@ -244,7 +249,7 @@
 
         <section id="Data-analysis">
             <h2>Data Analysis Plus 📊</h2>
-            <p> This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.</p>
+            <p>This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.</p>
             <a href="descriptive statistics report.html" class="action-button">View Descriptive Statistical Analysis</a>
         </section>
 
@@ -278,6 +283,19 @@
     <footer>
         <p>&copy; 2024 Codex Team. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Show the logo modal on page load
+        window.onload = function() {
+            var modal = document.getElementById("logoModal");
+            modal.style.display = "block";
+            // Hide the modal after 3 seconds
+            setTimeout(function() {
+                modal.style.display = "none";
+            }, 3000);
+        }
+    </script>
 </body>
 
 </html>
+
