@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://github.com/aarevalom0/NASA-APPS-CHALENGE-2024-Seismic-Detection-Across-the-Solar-System/blob/main/Images%20Page/CodexTeam.png" type="image/x-icon">
+    <link rel="icon" href="images/your-favicon-file.ico" type="image/x-icon"> <!-- Favicon Link -->
     <title>Codex Team Project Report</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -14,30 +14,30 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        
+
         header {
             background: #3498db;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
-        
+
         h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        
+
         nav {
             margin: 20px 0;
         }
-        
+
         nav a {
             color: #3498db;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -46,25 +46,16 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         h2 {
             color: #2c3e50;
         }
-        
-        ul {
-            list-style: none;
-            padding: 0;
+
+        img {
+            display: block;
+            margin: 20px auto;
         }
-        
-        ul li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        ul li:last-child {
-            border-bottom: none;
-        }
-        
+
         footer {
             text-align: center;
             padding: 20px;
@@ -79,71 +70,85 @@
 
 <body>
     <header>
-        <h1><img src="https://github.com/aarevalom0/NASA-APPS-CHALENGE-2024-Seismic-Detection-Across-the-Solar-System/blob/main/Images%20Page/CodexTeam.png" alt="Codex Team Logo" style="height:50px; vertical-align:middle;"> 
-            Codex Team Project Report</h1>
+        <h1>
+            <img src="images/your-logo-file.png" alt="Codex Team Logo" style="height:50px; vertical-align:middle;"> 
+            Codex Team Project Report
+        </h1>
         <nav>
-            <a href="#introduction">Introduction</a>
-            <a href="#methodology">Methodology</a>
-            <a href="#analysis">Analysis and Results</a>
-            <a href="#discussion">Discussion</a>
-            <a href="#conclusion">Conclusion</a>
-            <a href="#references">References</a>
+            <a href="#introduction"><i class="fas fa-info-circle"></i> Introduction</a>
+            <a href="#model-expectations"><i class="fas fa-cogs"></i> Model Expectations</a>
+            <a href="#visualization-example"><i class="fas fa-chart-bar"></i> Visualization Example</a>
+            <a href="#key-features"><i class="fas fa-star"></i> Key Features</a>
+            <a href="#data-analysis"><i class="fas fa-chart-pie"></i> Data Analysis Plus</a>
+            <a href="#confusion-matrix"><i class="fas fa-puzzle-piece"></i> Confusion Matrix</a>
+            <a href="#usage-guide"><i class="fas fa-book"></i> Usage Guide</a>
         </nav>
     </header>
 
     <div class="container">
         <section id="introduction">
-            <h2>1. Introduction</h2>
+            <h2>Welcome to Codex programl! 🌌</h2>
+            <p>Dive into our cutting-edge IA model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of detection of seismic activity. 🚀</p>
+        </section>
+
+        <section id="model-expectations">
+            <h2>What to Expect from the Model 🌍</h2>
+            <p>When you feed a CSV file into the model, it will provide the number of detected seismic events along with significant data. Additionally, it generates visualizations to help you understand the seismic activity better.</p>
+        </section>
+
+        <section id="visualization-example">
+            <h2>Visualization Example</h2>
+            <img src="Plots/prediction/prediction%20XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.png" alt="Prediction Plot" width="600"/>
+            <p>In this graph, you can see the exact points of seismic events and their corresponding frequency. The beauty of this predictive model lies in its adaptability; it can continuously evolve as new data is introduced, ensuring that the detection process remains accurate and up-to-date.</p>
+        </section>
+
+        <section id="key-features">
+            <h2>Key Features</h2>
             <ul>
-                <li>1.1 Project Overview</li>
-                <li>1.2 Objectives and Scope of Work</li>
-                <li>1.3 Codex Team's Vision and Mission</li>
+                <li><strong>High Accuracy:</strong> The model consistently achieves high training and cross-validation scores (around 0.999-1.000), indicating excellent performance.</li>
+                <li><strong>Robustness:</strong> The close alignment of training and validation scores suggests that the model is not overfitting.</li>
+            </ul>
+            <h3>Graph Explanation</h3>
+            <img src="Plots/Report%20Model/Learning%20curve.png" alt="Learning Curve" width="600"/>
+            <p>This graph illustrates how the model's performance changes as the number of training instances increases. It effectively demonstrates the model's capacity to generalize well with an increasing amount of data.</p>
+        </section>
+
+        <section id="data-analysis">
+            <h2>Data Analysis Plus 📊</h2>
+            <p>This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.</p>
+            <p>For example, one of the plots shows velocity over time, effectively distinguishing between seismic events (blue) and noise (red). This visualization not only identifies seismic occurrences but also offers critical information about their characteristics.</p>
+            <img src="Plots/Statistics/Scatter%20Plot%20with%20Trend%20Lines%20Velocity%20Vs.%20Time.png" alt="Velocity Vs. Time" width="600"/>
+            <p>In Graph, there’s a clear class imbalance, with many more noise data points than seismic events. Seismic events generally have lower velocity amplitudes compared to noise. Several noise spikes are visible, particularly around 40,000 and 80,000 seconds.</p>
+        </section>
+
+        <section id="confusion-matrix">
+            <h2>Confusion Matrix 🧩</h2>
+            <p>Notably, our model displays values in the confusion matrix that are even better than expected, showcasing its exceptional performance in detecting seismic signals.</p>
+            <img src="Plots/Report%20Model/Confusion%20Matrix.png" alt="Confusion Matrix" width="600"/>
+            <ul>
+                <li><strong>True Positives (TP):</strong> The model's ability to correctly identify seismic events, which is critical for ensuring safety and prompt response measures.</li>
+                <li><strong>False Positives (FP):</strong> These represent instances where noise is incorrectly classified as seismic events. Understanding and minimizing these can prevent unnecessary alerts and resource allocation.</li>
+                <li><strong>False Negatives (FN):</strong> This is particularly concerning as it indicates missed seismic events, which could have severe consequences in real-world applications.</li>
             </ul>
         </section>
 
-        <section id="methodology">
-            <h2>2. Methodology</h2>
+        <section id="usage-guide">
+            <h2>Guide to Using a Model in a `.ipynb` Repository</h2>
+            <p>To use the model contained in the `.ipynb` file, follow these steps:</p>
+            <h3>1. Open the Jupyter Notebook</h3>
+            <ol>
+                <li>Start Jupyter Notebook in your working environment.</li>
+                <li>Navigate to the location of the `.ipynb` file containing the model.</li>
+                <li>Click on the file to open it.</li>
+            </ol>
+            <h3>2. Run the Notebook Cells</h3>
+            <p>Once the notebook is open, you can run the cells in the following ways:</p>
             <ul>
-                <li>2.1 Approach and Techniques Used</li>
-                <li>2.2 Tools and Resources</li>
-                <li>2.3 Timeline of Key Activities</li>
+                <li><strong>Run a single cell:</strong> Select the cell you want to execute and press <code>Shift + Enter</code>. This will run the current cell and select the next one.</li>
+                <li><strong>Run all cells:</strong> Go to the menu and select <strong>Cell</strong> -> <strong>Run All</strong>. This will execute all cells in the notebook in order, from the first to the last.</li>
             </ul>
-        </section>
-
-        <section id="analysis">
-            <h2>3. Analysis and Results</h2>
-            <ul>
-                <li>3.1 Data Collection Methods</li>
-                <li>3.2 Experiments and Simulations</li>
-                <li>3.3 Key Findings and Observations</li>
-            </ul>
-        </section>
-
-        <section id="discussion">
-            <h2>4. Discussion</h2>
-            <ul>
-                <li>4.1 Interpretation of Results</li>
-                <li>4.2 Challenges Faced and Solutions</li>
-                <li>4.3 Improvements and Innovations</li>
-            </ul>
-        </section>
-
-        <section id="conclusion">
-            <h2>5. Conclusion</h2>
-            <ul>
-                <li>5.1 Summary of Achievements</li>
-                <li>5.2 Impact and Future Prospects</li>
-                <li>5.3 Codex Team's Contribution to the Field</li>
-            </ul>
-        </section>
-
-        <section id="references">
-            <h2>6. References</h2>
-            <ul>
-                <li>6.1 Academic and Industry Sources</li>
-                <li>6.2 Tools and Technologies Consulted</li>
-                <li>6.3 Additional Reading Materials</li>
-            </ul>
+            <h3>Note</h3>
+            <p>Make sure that all necessary dependencies and libraries are installed before running the notebook. You can refer to the <code>requirements.txt</code> file to see which packages are needed and ensure they are installed in your environment.</p>
         </section>
     </div>
 
