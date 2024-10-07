@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/your-favicon-file.ico" type="image/x-icon"> <!-- Favicon Link -->
+    <link rel="icon" href="CodexTeam.png" type="image/x-icon"> <!-- Favicon Link -->
     <title>Codex Team Project Report</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -49,11 +49,40 @@
 
         h2 {
             color: #2c3e50;
+            text-align: center;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: #eafaf1;
+            border-left: 5px solid #2ecc71;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .action-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .action-button:hover {
+            background: #2980b9;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
         }
 
         footer {
@@ -65,112 +94,94 @@
             bottom: 0;
             width: 100%;
         }
+
+        .documentation {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .documentation iframe {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            border: none;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="images/your-logo-file.png" alt="Codex Team Logo" style="height:50px; vertical-align:middle;"> 
+            <img src="CodexTeam.png" alt="Codex Team Logo" style="height:50px; vertical-align:middle;"> 
             Codex Team Project Report
         </h1>
         <nav>
             <a href="#introduction"><i class="fas fa-info-circle"></i> Introduction</a>
+            <a href="#video-pitch"><i class="fas fa-video"></i> Elevator Pitch</a>
             <a href="#model-expectations"><i class="fas fa-cogs"></i> Model Expectations</a>
-            <a href="#visualization-example"><i class="fas fa-chart-bar"></i> Visualization Example</a>
-            <a href="#key-features"><i class="fas fa-star"></i> Key Features</a>
-            <a href="#data-analysis"><i class="fas fa-chart-pie"></i> Data Analysis Plus</a>
-            <a href="#confusion-matrix"><i class="fas fa-puzzle-piece"></i> Confusion Matrix</a>
+            <a href="#advantages"><i class="fas fa-star"></i> Key Advantages</a>
             <a href="#usage-guide"><i class="fas fa-book"></i> Usage Guide</a>
+            <a href="upload.html" class="action-button">Upload CSV</a>
         </nav>
     </header>
 
     <div class="container">
         <section id="introduction">
             <h2>Welcome to Codex programl! 🌌</h2>
-            <p>Dive into our cutting-edge IA model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of detection of seismic activity. 🚀</p>
+            <p>Experience the forefront of seismic detection technology! Our cutting-edge AI model excels at identifying seismic signals, providing unprecedented insights into planetary seismic activity. 🚀</p>
+        </section>
+
+        <section id="video-pitch">
+            <h2>Watch Our Elevator Pitch 🎥</h2>
+            <div class="video-container">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/nNVApNWExxE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Discover how our innovative AI model transforms seismic data analysis and enhances our understanding of planetary seismic activity!</p>
+        </section>
+
+        <section id="documentation">
+            <h2>Explore Our Documentation 📑</h2>
+            <div class="documentation">
+                <iframe src="https://heyzine.com/flip-book/a7dfe014eb.html" title="Codex Team Documentation"></iframe>
+                <p>Explore our comprehensive program documentation embedded above!</p>
+            </div>
         </section>
 
         <section id="model-expectations">
-            <h2>What to Expect from the Model 🌍</h2>
-            <p>When you feed a CSV file into the model, it will provide the number of detected seismic events along with significant data. Additionally, it generates visualizations to help you understand the seismic activity better.</p>
+            <h2>What to Expect from Our Model 🌍</h2>
+            <p>By inputting a CSV file into our model, you will obtain the number of detected seismic events along with significant data. Our model also generates visualizations to help you better understand seismic activity.</p>
         </section>
 
-        <section id="visualization-example">
-            <h2>Visualization Example</h2>
-            <img src="Plots/prediction/prediction%20XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.png" alt="Prediction Plot" width="600"/>
-            <p>In this graph, you can see the exact points of seismic events and their corresponding frequency. The beauty of this predictive model lies in its adaptability; it can continuously evolve as new data is introduced, ensuring that the detection process remains accurate and up-to-date.</p>
+        <section id="advantages">
+            <h2>Key Advantages of Our Approach</h2>
+            <div class="highlight">
+                <p><strong>High Accuracy:</strong> Our model achieves remarkable precision, consistently scoring between 0.999-1.000 during validation tests.</p>
+                <p><strong>Robustness:</strong> Designed to adapt to various data types and conditions, ensuring reliability across different environments.</p>
+                <p><strong>Real-Time Insights:</strong> Our model processes data efficiently, providing immediate feedback and actionable insights into seismic events.</p>
+                <p><strong>Creative Problem-Solving:</strong> We employ innovative algorithms tailored to distinguish between seismic signals and background noise, enhancing the reliability of our findings.</p>
+                <a href="knn_report.html" class="action-button">View Full Model Report</a>
+            </div>
         </section>
 
-        <section id="key-features">
-            <h2>Key Features</h2>
-            <ul>
-                <li><strong>High Accuracy:</strong> The model consistently achieves high training and cross-validation scores (around 0.999-1.000), indicating excellent performance.</li>
-                <li><strong>Robustness:</strong> The close alignment of training and validation scores suggests that the model is not overfitting.</li>
-            </ul>
-            <h3>Graph Explanation</h3>
-            <img src="Plots/Report%20Model/Learning%20curve.png" alt="Learning Curve" width="600"/>
-            <p>This graph illustrates how the model's performance changes as the number of training instances increases. It effectively demonstrates the model's capacity to generalize well with an increasing amount of data.</p>
-            <p>Click the button below to view the full report of the proposed model:</p>
-            <a href="knn_report.html" style="text-decoration: none;">
-                <button>Upload CSV</button>
-            </a>
-        
-        </section>
-
-        
-
-        <section id="data-analysis">
+        <section id="Data-analysis">
             <h2>Data Analysis Plus 📊</h2>
-            <p>This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.</p>
-            <p>For example, one of the plots shows velocity over time, effectively distinguishing between seismic events (blue) and noise (red). This visualization not only identifies seismic occurrences but also offers critical information about their characteristics.</p>
-            <img src="Plots/Statistics/Scatter%20Plot%20with%20Trend%20Lines%20Velocity%20Vs.%20Time.png" alt="Velocity Vs. Time" width="600"/>
-            <p>In Graph, there’s a clear class imbalance, with many more noise data points than seismic events. Seismic events generally have lower velocity amplitudes compared to noise. Several noise spikes are visible, particularly around 40,000 and 80,000 seconds.</p>
-            <p>Click the button below to view the full descriptive statistical analysis:</p>
-            <a href="descriptive statistics report.html" style="text-decoration: none;">
-                <button>Upload CSV</button>
-            </a>
-        
-        </section>
-
-        <section id="confusion-matrix">
-            <h2>Confusion Matrix 🧩</h2>
-            <p>Notably, our model displays values in the confusion matrix that are even better than expected, showcasing its exceptional performance in detecting seismic signals.</p>
-            <img src="Plots/Report%20Model/Confusion%20Matrix.png" alt="Confusion Matrix" width="600"/>
-            <ul>
-                <li><strong>True Positives (TP):</strong> The model's ability to correctly identify seismic events, which is critical for ensuring safety and prompt response measures.</li>
-                <li><strong>False Positives (FP):</strong> These represent instances where noise is incorrectly classified as seismic events. Understanding and minimizing these can prevent unnecessary alerts and resource allocation.</li>
-                <li><strong>False Negatives (FN):</strong> This is particularly concerning as it indicates missed seismic events, which could have severe consequences in real-world applications.</li>
-            </ul>
+            <a href="descriptive statistics report.html" class="action-button">View Descriptive Statistical Analysis</a>
         </section>
 
         <section id="usage-guide">
-            <h2>Guide to Using a Model in a `.ipynb` Repository</h2>
-            <p>To use the model contained in the `.ipynb` file, follow these steps:</p>
+            <h2>How to Use the Model</h2>
+            <p>To utilize our model, follow these simple steps:</p>
             <h3>1. Open the Jupyter Notebook</h3>
             <ol>
                 <li>Start Jupyter Notebook in your working environment.</li>
                 <li>Navigate to the location of the `.ipynb` file containing the model.</li>
                 <li>Click on the file to open it.</li>
             </ol>
-            <h3>2. Run the Notebook Cells</h3>
-            <p>Once the notebook is open, you can run the cells in the following ways:</p>
-            <ul>
-                <li><strong>Run a single cell:</strong> Select the cell you want to execute and press <code>Shift + Enter</code>. This will run the current cell and select the next one.</li>
-                <li><strong>Run all cells:</strong> Go to the menu and select <strong>Cell</strong> -> <strong>Run All</strong>. This will execute all cells in the notebook in order, from the first to the last.</li>
-            </ul>
-            <h3>Note</h3>
-            <p>Make sure that all necessary dependencies and libraries are installed before running the notebook. You can refer to the <code>requirements.txt</code> file to see which packages are needed and ensure they are installed in your environment.</p>
-        </section>
-
-        <section id="usage-guide WEB DEMO">
-            <h2>Guide to Using the Model in a `.ipynb` Repository</h2>
-            <p>To use the model contained in the `.ipynb` file, follow these steps:</p>
-            <h3>Upload CSV File</h3>
-            <p>Click the button below to upload your CSV file for analysis:</p>
-            <a href="upload.html" style="text-decoration: none;">
-                <button>Upload CSV</button>
-            </a>
+            <h3>2. Upload Your CSV File</h3>
+            <p>Use the button below to upload your CSV file for analysis:</p>
+            <a href="upload.html" class="action-button">Upload CSV</a>
+            <h3>3. Analyze the Results</h3>
+            <p>Run the notebook cells and discover insights from your data!</p>
         </section>
     </div>
 
