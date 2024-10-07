@@ -32,6 +32,21 @@ In this section, we provide a comprehensive HTML report with valuable insights a
 
 In Graph , there’s a clear class imbalance, with many more noise data points than seismic events. Seismic events generally have lower velocity amplitudes compared to noise. Several noise spikes are visible, particularly around 40,000 and 80,000 seconds.
 
+## Confusion Matrix 🧩
+
+Notably, our model displays values in the confusion matrix that are even better than expected, showcasing its exceptional performance in detecting seismic signals. 
+
+<img src="Plots/Report%20Model/Confusion%20Matrix.png" alt="Confusion Matrix" width="600"/>
+
+- **True Positives (TP)**: The model's ability to correctly identify seismic events, which is critical for ensuring safety and prompt response measures.
+- **False Positives (FP)**: These represent instances where noise is incorrectly classified as seismic events. Understanding and minimizing these can prevent unnecessary alerts and resource allocation.
+- **False Negatives (FN)**: This is particularly concerning as it indicates missed seismic events, which could have severe consequences in real-world applications.
+
+
+
+
+
+
 
 ## Guide to Using a Model in a `.ipynb` Repository
 
