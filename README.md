@@ -24,6 +24,14 @@ In this graph, you can see the exact points of seismic events and their correspo
 
 This graph illustrates how the model's performance changes as the number of training instances increases. It effectively demonstrates the model's capacity to generalize well with an increasing amount of data.
 
+## Data Analysis Plus 📊
+
+In this section, we provide a comprehensive HTML report with valuable insights about seismic events. For example: This plot shows velocity over time, distinguishing between seismic events (blue) and noise (red). 
+
+<img src="Plots/Statistics/Scatter%20Plot%20with%20Trend%20Lines%20Velocity%20Vs.%20Time.png" alt="Velocity Vs. Time" width="600"/>
+
+In Graph , there’s a clear class imbalance, with many more noise data points than seismic events. Seismic events generally have lower velocity amplitudes compared to noise. Several noise spikes are visible, particularly around 40,000 and 80,000 seconds.
+
 
 ## Guide to Using a Model in a `.ipynb` Repository
 
