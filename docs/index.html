@@ -8,76 +8,96 @@
     <title>Codex Team Project Report</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Basic styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000;
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fpin%2F653725702185055932%2F&psig=AOvVaw0lLkgA2_VtSxtDW0jP-ctz&ust=1728359564643000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICejqOv-4gDFQAAAAAdAAAAABAJ');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
         }
 
         header {
-            background: #3498db;
+            background: rgba(19, 38, 185, 0.9);
             color: white;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
         }
 
         h1 {
             margin: 0;
-            font-size: 2.5em;
-        }
-
-        nav {
-            margin: 20px 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         nav a {
-            color: #3498db;
+            color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #f39c12;
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
         }
 
         h2 {
-            color: #2c3e50;
+            color: #f39c12;
             text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            font-size: 2em;
         }
 
         p {
+            line-height: 1.8;
             text-align: justify;
-            line-height: 1.6;
+            color: #dddddd;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         }
 
         .highlight {
-            background: #eafaf1;
-            border-left: 5px solid #2ecc71;
-            padding: 15px;
-            margin: 10px 0;
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 5px solid #1de26f;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
         }
 
         .action-button {
             display: inline-block;
-            background: #3498db;
+            background: rgba(19, 38, 185, 0.9);
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
             margin: 20px 0;
             font-size: 1.2em;
+            transition: 0.3s ease;
             text-align: center;
         }
 
         .action-button:hover {
-            background: #2980b9;
+            background: #f39c12;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+            transform: scale(1.1);
         }
 
         .video-container {
@@ -88,24 +108,19 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: #3498db;
+            background: rgba(19, 38, 185, 0.9);
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .documentation {
-            text-align: center;
-            margin: 20px 0;
+            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.4);
         }
 
         .documentation iframe {
             width: 100%;
-            height: 600px; /* Adjust height as needed */
+            height: 600px;
             border: none;
-            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
         }
+
         .file-upload {
             text-align: center;
             margin-top: 20px;
@@ -116,13 +131,52 @@
         }
 
         .file-upload button {
-            background-color: #3498db;
+            background-color: #1b5cd3;
             color: white;
             padding: 10px;
             border: none;
             cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
         }
+
+        .file-upload button:hover {
+            background-color: #f39c12;
+        }
+
+        /* Animations */
+        h2, h1 {
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        p, .highlight, .action-button {
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Spacey Font -->
 </head>
 
 <body>
@@ -137,28 +191,38 @@
             <a href="#model-expectations"><i class="fas fa-cogs"></i> Model Expectations</a>
             <a href="#advantages"><i class="fas fa-star"></i> Key Advantages</a>
             <a href="#usage-guide"><i class="fas fa-book"></i> Usage Guide</a>
+            
         </nav>
     </header>
 
     <div class="container">
         <section id="introduction">
-            <h2>Welcome to Codex programl! 🌌</h2>
-            <p>Experience the forefront of seismic detection technology! Our cutting-edge AI model excels at identifying seismic signals, providing unprecedented insights into planetary seismic activity. 🚀</p>
+            <h2>Welcome to the Future of Planetary Seismic Detection with Codex Program! 🌌</h2>
+            <p>
+                Imagine a world where every tremor on distant planets can be detected, analyzed, and understood with precision. The <strong>Codex Program</strong> is at the forefront of this revolution, leveraging advanced AI technology to transform seismic data into groundbreaking insights. Our model doesn't just detect seismic activity — it empowers scientists, engineers, and explorers to better understand the inner workings of planetary bodies, opening new doors for discovery and exploration 🌍.
+                With the ability to filter noise, identify seismic events, and generate high-impact data visualizations, our solution brings the universe closer. From Earth to Mars and beyond, the <strong>Codex Program</strong> is setting a new standard for planetary seismology 🚀.
+            </p>
+            <p>
+                The implications of our technology are immense. By automating the detection and analysis of seismic events, we not only enhance our understanding of planetary geology but also provide vital data that could inform future space missions, resource discovery, and even the search for life. With Codex, we are unlocking the mysteries beneath the surface of other worlds — and the possibilities are endless ✨.
+                Join us on this extraordinary journey as we revolutionize the way we explore and understand our universe. The future of planetary science starts here. 🌠
+            </p>
         </section>
 
         <section id="video-pitch">
             <h2>Watch Our Codex Project 🎥</h2>
-            <div class="video-container">
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/nNVApNWExxE" frameborder="0" allowfullscreen></iframe>
-            </div>
             <p>Discover how our innovative AI model transforms seismic data analysis and enhances our understanding of planetary seismic activity!</p>
+            <div class="video-container">
+                <iframe width="800" height="550" src="https://www.youtube.com/embed/nNVApNWExxE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
         </section>
 
         <section id="documentation">
             <h2>Explore Our Documentation 📑</h2>
+            <p>Explore our comprehensive program documentation embedded above!</p>
             <div class="documentation">
                 <iframe src="https://heyzine.com/flip-book/a7dfe014eb.html" title="Codex Team Documentation"></iframe>
-                <p>Explore our comprehensive program documentation embedded above!</p>
+                
             </div>
         </section>
 
@@ -180,26 +244,35 @@
 
         <section id="Data-analysis">
             <h2>Data Analysis Plus 📊</h2>
+            <p> This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.</p>
             <a href="descriptive statistics report.html" class="action-button">View Descriptive Statistical Analysis</a>
         </section>
 
-        <section id="usage-guide WEB">
-            <h2>How to Use the Model</h2>
-            <p>To utilize our model, follow these simple steps:</p>
+        <section id="download-model">
+            <h2>Download the Model 📥</h2>
+            <p>Get started with our seismic detection model by downloading the Jupyter Notebook file below:</p>
+            <a href="CodexProgram.ipynb" class="action-button" download>Download Model (.ipynb)</a> <!-- Update with the correct path -->
+        </section>
+
+        <section id="Usage-guide">
+            <h2>Guide to Using the Model in a .ipynb Repository</h2>
+            <p>To use the model contained in the <code>.ipynb</code> file, follow these steps:</p>
+            
             <h3>1. Open the Jupyter Notebook</h3>
             <ol>
                 <li>Start Jupyter Notebook in your working environment.</li>
-                <li>Navigate to the location of the `.ipynb` file containing the model.</li>
+                <li>Navigate to the location of the <code>.ipynb</code> file containing the model.</li>
                 <li>Click on the file to open it.</li>
             </ol>
-            <h3>2. Upload Your CSV File</h3>
-            <form method="POST" enctype="multipart/form-data" action="/upload">
-                <input type="file" name="file" accept=".csv" required />
-                <button type="submit">Upload and Predict</button>
-            </form>
-            <h3>3. Analyze the Results</h3>
-            <p>Run the notebook cells and discover insights from your data!</p>
+            
+            <h3>2. Run the Notebook Cells</h3>
+            <p>Once the notebook is open, you can run the cells in the following ways:</p>
+            <ul>
+                <li><strong>Run a single cell:</strong> Select the cell you want to execute and press <code>Shift + Enter</code>. This will run the current cell and select the next one.</li>
+                <li><strong>Run all cells:</strong> Go to the menu and select <strong>Cell</strong> -> <strong>Run All</strong>. This will execute all cells in the notebook in order, from the first to the last.</li>
+            </ul>
         </section>
+        
     </div>
 
     <footer>
