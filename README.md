@@ -1,6 +1,6 @@
-# Welcome to the Seismic Detection Model! 🌌
+# Welcome to the Sismic Detection Model! 🌌
 
-Dive into our cutting-edge IA model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of seismic activity. 🚀
+Dive into our cutting-edge IA model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of detection of sismic activity. 🚀
 
 ## What to Expect from the Model 🌍
 
