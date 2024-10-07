@@ -20,7 +20,7 @@ In this graph, you can see the exact points of seismic events and their correspo
 
 ### Graph Explanation
 
-![Learning Curve](Plots/Report%20Model/Learning%20curve.png)
+<img src="Plots/Report%20Model/Learning%20curve.png" alt="Learning Curve" width="600"/>
 
 This graph illustrates how the model's performance changes as the number of training instances increases. It effectively demonstrates the model's capacity to generalize well with an increasing amount of data.
 
