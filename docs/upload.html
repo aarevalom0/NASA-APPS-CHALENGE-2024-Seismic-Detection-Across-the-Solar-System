@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/your-favicon-file.ico" type="image/x-icon"> <!-- Favicon Link -->
+    <title>Upload CSV - Codex Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Your CSV File</h1>
+        <form action="process_csv.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <br>
+            <button type="submit">Upload CSV</button>
+        </form>
+        <br>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+
+</html>
