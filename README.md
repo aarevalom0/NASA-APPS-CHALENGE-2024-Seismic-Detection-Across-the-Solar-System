@@ -7,8 +7,6 @@ Dive into our cutting-edge model for detecting seismic signals! With impressive 
 - **High Accuracy**: The model consistently achieves high training and cross-validation scores (around 0.999-1.000), indicating excellent performance.
 - **Robustness**: The close alignment of training and validation scores suggests that the model is not overfitting.
 
-## Performance Visualization
-
 ![Learning Curve](Plots/Report Model/Learning curve.png)
 
 ### Graph Explanation
