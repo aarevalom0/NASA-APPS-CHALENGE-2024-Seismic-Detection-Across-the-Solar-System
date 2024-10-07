@@ -1,4 +1,4 @@
-# Welcome to the Sismic Detection Model! 🌌
+# Welcome to Codex programl! 🌌
 
 Dive into our cutting-edge IA model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of detection of sismic activity. 🚀
 
