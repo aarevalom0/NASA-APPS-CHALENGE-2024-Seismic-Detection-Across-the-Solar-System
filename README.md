@@ -26,7 +26,9 @@ This graph illustrates how the model's performance changes as the number of trai
 
 ## Data Analysis Plus 📊
 
-In this section, we provide a comprehensive HTML report with valuable insights about seismic events. For example: This plot shows velocity over time, distinguishing between seismic events (blue) and noise (red). 
+This section highlights a significant plus: our approach goes beyond the initial goal of merely detecting seismic events. We provide a comprehensive HTML report filled with valuable insights that enhance our understanding of seismic activity.
+
+For example, one of the plots shows velocity over time, effectively distinguishing between seismic events (blue) and noise (red). This visualization not only identifies seismic occurrences but also offers critical information about their characteristics. 
 
 <img src="Plots/Statistics/Scatter%20Plot%20with%20Trend%20Lines%20Velocity%20Vs.%20Time.png" alt="Velocity Vs. Time" width="600"/>
 
