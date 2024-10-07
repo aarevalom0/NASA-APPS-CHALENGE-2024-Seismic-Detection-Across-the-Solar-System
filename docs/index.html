@@ -168,7 +168,7 @@
             <a href="descriptive statistics report.html" class="action-button">View Descriptive Statistical Analysis</a>
         </section>
 
-        <section id="usage-guide">
+        <section id="usage-guide WEB">
             <h2>How to Use the Model</h2>
             <p>To utilize our model, follow these simple steps:</p>
             <h3>1. Open the Jupyter Notebook</h3>
@@ -178,8 +178,10 @@
                 <li>Click on the file to open it.</li>
             </ol>
             <h3>2. Upload Your CSV File</h3>
-            <p>Use the button below to upload your CSV file for analysis:</p>
-            <a href="upload.html" class="action-button">Upload CSV</a>
+            <form method="POST" enctype="multipart/form-data" action="/upload">
+                <input type="file" name="file" accept=".csv" required />
+                <button type="submit">Upload and Predict</button>
+            </form>
             <h3>3. Analyze the Results</h3>
             <p>Run the notebook cells and discover insights from your data!</p>
         </section>
