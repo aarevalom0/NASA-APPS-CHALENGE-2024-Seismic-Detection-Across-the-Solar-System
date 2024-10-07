@@ -1,4 +1,19 @@
-## Guía para Usar un Modelo en un Repositorio `.ipynb`
+# Welcome to the Seismic Detection Model! 🌌
+
+Dive into our cutting-edge model for detecting seismic signals! With impressive performance metrics and stunning visualizations, this project showcases how technology can enhance our understanding of seismic activity. 🚀
+
+## Key Features
+
+- **High Accuracy**: The model consistently achieves high training and cross-validation scores (around 0.999-1.000), indicating excellent performance.
+- **Robustness**: The close alignment of training and validation scores suggests that the model is not overfitting.
+
+## Performance Visualization
+
+![Learning Curve](Plots/Report Model/Learning curve.png)
+
+### Graph Explanation
+
+This graph illustrates how the model's performance changes as the number of training instances increases. It effectively demonstrates the model's capacity to generalize well with an increasing amount of data.
 
 
 ## Guide to Using a Model in a `.ipynb` Repository
