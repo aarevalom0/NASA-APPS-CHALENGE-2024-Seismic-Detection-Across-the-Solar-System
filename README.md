@@ -8,7 +8,8 @@ When you feed a CSV file into the model, it will provide the number of detected 
 
 ### Visualization Example
 
-![Prediction Plot](Plots/prediction.png)
+![Prediction Plot](Plots/prediction/prediction%20XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.png)
+
 
 In this graph, you can see the exact points of seismic events and their corresponding frequency. The beauty of this predictive model lies in its adaptability; it can continuously evolve as new data is introduced, ensuring that the detection process remains accurate and up-to-date.
 
