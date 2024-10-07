@@ -14,10 +14,11 @@
             margin: 0;
             padding: 0;
             background-color: #000;
-            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fpin%2F653725702185055932%2F&psig=AOvVaw0lLkgA2_VtSxtDW0jP-ctz&ust=1728359564643000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICejqOv-4gDFQAAAAAdAAAAABAJ');
+            background-image: url('https://cdn.pixabay.com/animation/2023/06/06/06/51/06-51-32-766_512.gif'); /* Animated background */
             background-size: cover;
             background-attachment: fixed;
             color: white;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         header {
@@ -41,10 +42,12 @@
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
+            transition: color 0.3s ease; /* Smooth transition */
         }
 
         nav a:hover {
             color: #f39c12;
+            transform: scale(1.1); /* Scale effect on hover */
         }
 
         .container {
@@ -55,6 +58,9 @@
             border-radius: 15px;
             box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(5px);
+            opacity: 0; /* Start hidden for animation */
+            transform: translateY(20px); /* Start position for animation */
+            animation: fadeInUp 0.5s forwards; /* Fade in effect */
         }
 
         h2 {
@@ -79,6 +85,12 @@
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
+            transition: transform 0.3s ease; /* Smooth transform on hover */
+        }
+
+        .highlight:hover {
+            transform: scale(1.02); /* Scale effect on hover */
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
         }
 
         .action-button {
@@ -175,6 +187,17 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Spacey Font -->
@@ -276,13 +299,6 @@
                 <li><strong>Run a single cell:</strong> Select the cell you want to execute and press <code>Shift + Enter</code>. This will run the current cell and select the next one.</li>
                 <li><strong>Run all cells:</strong> Go to the menu and select <strong>Cell</strong> -> <strong>Run All</strong>. This will execute all cells in the notebook in order, from the first to the last.</li>
             </ul>
-        </section>
-
-        <!-- GitHub Repository Link -->
-        <section id="github-repo">
-            <h2>Visit Our GitHub Repository 📂</h2>
-            <p>Explore the code and resources for the Codex Program on GitHub:</p>
-            <a href="https://github.com/aarevalom0/NASA-APPS-CHALENGE-2024-Seismic-Detection-Across-the-Solar-System.git" class="action-button" target="_blank">View GitHub Repository</a>
         </section>
         
     </div>
